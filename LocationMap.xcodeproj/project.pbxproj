@@ -17,6 +17,17 @@
 		EACC3CA227E98FDB00988939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C7827E98FDA00988939 /* ContentView.swift */; };
 		EACC3CA327E98FDB00988939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EACC3C7927E98FDB00988939 /* Assets.xcassets */; };
 		EACC3CA427E98FDB00988939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EACC3C7927E98FDB00988939 /* Assets.xcassets */; };
+		EACC3CB427E9900400988939 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB327E9900400988939 /* MapView.swift */; };
+		EACC3CB527E9900400988939 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB327E9900400988939 /* MapView.swift */; };
+		EACC3CB727E9902100988939 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB627E9902100988939 /* MapViewModel.swift */; };
+		EACC3CB827E9902100988939 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB627E9902100988939 /* MapViewModel.swift */; };
+		EACC3CBA27E9903B00988939 /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB927E9903B00988939 /* LocationDataSource.swift */; };
+		EACC3CBB27E9903B00988939 /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB927E9903B00988939 /* LocationDataSource.swift */; };
+		EACC3CBD27E9905000988939 /* PinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBC27E9905000988939 /* PinItem.swift */; };
+		EACC3CBE27E9905000988939 /* PinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBC27E9905000988939 /* PinItem.swift */; };
+		EACC3CC027E9906600988939 /* CLAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */; };
+		EACC3CC127E9906600988939 /* CLAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */; };
+		EACC3CC727E9929500988939 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACC3CC627E9929500988939 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,12 @@
 		EACC3C9727E98FDB00988939 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACC3C9B27E98FDB00988939 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EACC3C9D27E98FDB00988939 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EACC3CB327E9900400988939 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EACC3CB627E9902100988939 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		EACC3CB927E9903B00988939 /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
+		EACC3CBC27E9905000988939 /* PinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItem.swift; sourceTree = "<group>"; };
+		EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatus.swift; sourceTree = "<group>"; };
+		EACC3CC627E9929500988939 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACC3CC727E9929500988939 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 				EACC3C8E27E98FDB00988939 /* Tests iOS */,
 				EACC3C9A27E98FDB00988939 /* Tests macOS */,
 				EACC3C7F27E98FDB00988939 /* Products */,
+				EACC3CC527E9929500988939 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				EACC3C7727E98FDA00988939 /* LocationMapApp.swift */,
-				EACC3C7827E98FDA00988939 /* ContentView.swift */,
+				EACC3CC327E9907F00988939 /* View */,
+				EACC3CC427E9909800988939 /* Model */,
+				EACC3CC227E9907700988939 /* ViewModel */,
 				EACC3C7927E98FDB00988939 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +160,41 @@
 				EACC3C9D27E98FDB00988939 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EACC3CC227E9907700988939 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EACC3CB627E9902100988939 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EACC3CC327E9907F00988939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EACC3C7827E98FDA00988939 /* ContentView.swift */,
+				EACC3CB327E9900400988939 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EACC3CC427E9909800988939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */,
+				EACC3CB927E9903B00988939 /* LocationDataSource.swift */,
+				EACC3CBC27E9905000988939 /* PinItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EACC3CC527E9929500988939 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EACC3CC627E9929500988939 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +355,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACC3CBD27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA127E98FDB00988939 /* ContentView.swift in Sources */,
+				EACC3CBA27E9903B00988939 /* LocationDataSource.swift in Sources */,
+				EACC3CB427E9900400988939 /* MapView.swift in Sources */,
 				EACC3C9F27E98FDB00988939 /* LocationMapApp.swift in Sources */,
+				EACC3CB727E9902100988939 /* MapViewModel.swift in Sources */,
+				EACC3CC027E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +369,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACC3CBE27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA227E98FDB00988939 /* ContentView.swift in Sources */,
+				EACC3CBB27E9903B00988939 /* LocationDataSource.swift in Sources */,
+				EACC3CB527E9900400988939 /* MapView.swift in Sources */,
 				EACC3CA027E98FDB00988939 /* LocationMapApp.swift in Sources */,
+				EACC3CB827E9902100988939 /* MapViewModel.swift in Sources */,
+				EACC3CC127E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報を使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -496,6 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報を使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -529,6 +597,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報を使用します";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -555,6 +624,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報を使用します";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
