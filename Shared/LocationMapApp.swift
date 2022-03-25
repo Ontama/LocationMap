@@ -10,7 +10,6 @@ import CoreLocation
 
 @main
 struct LocationMapApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var viewModel = MapViewModel(model: LocationDataSource())
     var body: some Scene {
         WindowGroup {

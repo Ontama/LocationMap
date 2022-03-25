@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA0DDF4E27EC433E008FB0D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DDF4D27EC433E008FB0D5 /* AppDelegate.swift */; };
-		EA0DDF4F27EC433E008FB0D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DDF4D27EC433E008FB0D5 /* AppDelegate.swift */; };
-		EA0DDF5127EC43BB008FB0D5 /* LocationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DDF5027EC43BB008FB0D5 /* LocationParameter.swift */; };
-		EA0DDF5227EC43BB008FB0D5 /* LocationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DDF5027EC43BB008FB0D5 /* LocationParameter.swift */; };
 		EACC3C9027E98FDB00988939 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C8F27E98FDB00988939 /* Tests_iOS.swift */; };
 		EACC3C9227E98FDB00988939 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9127E98FDB00988939 /* Tests_iOSLaunchTests.swift */; };
 		EACC3C9C27E98FDB00988939 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9B27E98FDB00988939 /* Tests_macOS.swift */; };
@@ -52,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA0DDF4D27EC433E008FB0D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA0DDF5027EC43BB008FB0D5 /* LocationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationParameter.swift; sourceTree = "<group>"; };
 		EACC3C7727E98FDA00988939 /* LocationMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapApp.swift; sourceTree = "<group>"; };
 		EACC3C7827E98FDA00988939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EACC3C7927E98FDB00988939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				EACC3C7727E98FDA00988939 /* LocationMapApp.swift */,
-				EA0DDF4D27EC433E008FB0D5 /* AppDelegate.swift */,
 				EACC3CC327E9907F00988939 /* View */,
 				EACC3CC427E9909800988939 /* Model */,
 				EACC3CC227E9907700988939 /* ViewModel */,
@@ -192,7 +185,6 @@
 				EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */,
 				EACC3CB927E9903B00988939 /* LocationDataSource.swift */,
 				EACC3CBC27E9905000988939 /* PinItem.swift */,
-				EA0DDF5027EC43BB008FB0D5 /* LocationParameter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,13 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0DDF4E27EC433E008FB0D5 /* AppDelegate.swift in Sources */,
 				EACC3CBD27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA127E98FDB00988939 /* ContentView.swift in Sources */,
 				EACC3CBA27E9903B00988939 /* LocationDataSource.swift in Sources */,
 				EACC3CB427E9900400988939 /* MapView.swift in Sources */,
 				EACC3C9F27E98FDB00988939 /* LocationMapApp.swift in Sources */,
-				EA0DDF5127EC43BB008FB0D5 /* LocationParameter.swift in Sources */,
 				EACC3CB727E9902100988939 /* MapViewModel.swift in Sources */,
 				EACC3CC027E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
 			);
@@ -379,13 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0DDF4F27EC433E008FB0D5 /* AppDelegate.swift in Sources */,
 				EACC3CBE27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA227E98FDB00988939 /* ContentView.swift in Sources */,
 				EACC3CBB27E9903B00988939 /* LocationDataSource.swift in Sources */,
 				EACC3CB527E9900400988939 /* MapView.swift in Sources */,
 				EACC3CA027E98FDB00988939 /* LocationMapApp.swift in Sources */,
-				EA0DDF5227EC43BB008FB0D5 /* LocationParameter.swift in Sources */,
 				EACC3CB827E9902100988939 /* MapViewModel.swift in Sources */,
 				EACC3CC127E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
 			);
