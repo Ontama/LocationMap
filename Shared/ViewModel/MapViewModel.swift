@@ -14,7 +14,7 @@ final class MapViewModel: NSObject, ObservableObject {
     var cancellables = Set<AnyCancellable>()
     @Published var authorizationStatus = CLAuthorizationStatus.notDetermined
     @Published var location: CLLocation = .init()
-    let currentChangeSubject = PassthroughSubject<Void, Never>()
+    private let currentChangeSubject = PassthroughSubject<Void, Never>()
 
     var latitude: CLLocationDegrees {
         location.coordinate.latitude
@@ -61,5 +61,9 @@ final class MapViewModel: NSObject, ObservableObject {
     
     func changeCurrentLocation() {
         currentChangeSubject.send()
+    }
+    
+    func currentChangePublisher() -> AnyPublisher<Void, Never> {
+        currentChangeSubject.eraseToAnyPublisher()
     }
 }

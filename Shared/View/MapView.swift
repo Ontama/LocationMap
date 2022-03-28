@@ -29,7 +29,7 @@ struct MapView: View {
             .onAppear(perform: {
                 viewModel.startTracking()
             })
-            .onReceive(viewModel.currentChangeSubject, perform: { locations in
+            .onReceive(viewModel.currentChangePublisher(), perform: { locations in
                 updateReigion(coordinate: CLLocationCoordinate2D(latitude: viewModel.latitude, longitude: viewModel.longitude))
             })
         // 現在地を取得したら現在地を中心にする
