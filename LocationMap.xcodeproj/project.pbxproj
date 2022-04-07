@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EACC3C9027E98FDB00988939 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C8F27E98FDB00988939 /* Tests_iOS.swift */; };
 		EACC3C9227E98FDB00988939 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9127E98FDB00988939 /* Tests_iOSLaunchTests.swift */; };
-		EACC3C9C27E98FDB00988939 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9B27E98FDB00988939 /* Tests_macOS.swift */; };
-		EACC3C9E27E98FDB00988939 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9D27E98FDB00988939 /* Tests_macOSLaunchTests.swift */; };
 		EACC3C9F27E98FDB00988939 /* LocationMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C7727E98FDA00988939 /* LocationMapApp.swift */; };
 		EACC3CA027E98FDB00988939 /* LocationMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C7727E98FDA00988939 /* LocationMapApp.swift */; };
 		EACC3CA127E98FDB00988939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C7827E98FDA00988939 /* ContentView.swift */; };
@@ -53,13 +51,10 @@
 		EACC3C7927E98FDB00988939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EACC3C7E27E98FDB00988939 /* LocationMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACC3C8427E98FDB00988939 /* LocationMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EACC3C8627E98FDB00988939 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		EACC3C8B27E98FDB00988939 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACC3C8F27E98FDB00988939 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		EACC3C9127E98FDB00988939 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		EACC3C9727E98FDB00988939 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EACC3C9B27E98FDB00988939 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		EACC3C9D27E98FDB00988939 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		EACC3CB327E9900400988939 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EACC3CB627E9902100988939 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		EACC3CB927E9903B00988939 /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
@@ -105,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				EACC3C7627E98FDA00988939 /* Shared */,
-				EACC3C8527E98FDB00988939 /* macOS */,
 				EACC3C8E27E98FDB00988939 /* Tests iOS */,
-				EACC3C9A27E98FDB00988939 /* Tests macOS */,
 				EACC3C7F27E98FDB00988939 /* Products */,
 				EACC3CC527E9929500988939 /* Frameworks */,
 			);
@@ -136,14 +129,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EACC3C8527E98FDB00988939 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				EACC3C8627E98FDB00988939 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		EACC3C8E27E98FDB00988939 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,15 +136,6 @@
 				EACC3C9127E98FDB00988939 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		EACC3C9A27E98FDB00988939 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				EACC3C9B27E98FDB00988939 /* Tests_macOS.swift */,
-				EACC3C9D27E98FDB00988939 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		EACC3CC227E9907700988939 /* ViewModel */ = {
@@ -392,8 +368,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACC3C9E27E98FDB00988939 /* Tests_macOSLaunchTests.swift in Sources */,
-				EACC3C9C27E98FDB00988939 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
