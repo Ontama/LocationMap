@@ -17,29 +17,24 @@ struct ContentView: View {
                 }
                 Button("start") {
                     viewModel.startTracking()
-                    viewModel.changeCurrentLocation()
                 }
                 Button("stop") {
                     viewModel.stopTracking()
                 }
-                Button("現在地") {
-                    viewModel.changeCurrentLocation()
-                }
+                CurrentLocationCenterButton(action: {
+                    viewModel.currentLocationCenterButtonTappedSubject.send()
+                })
             }
-            Text(viewModel.authorizationStatus.description)
+//            Text(viewModel.authorizationStatus.description)
             Text(String(format: "longitude: %f", viewModel.longitude))
             Text(String(format: "latitude: %f", viewModel.latitude))
             MapView(viewModel: viewModel)
-        }.onAppear {
-            viewModel.activate()
-        }.onDisappear {
-            viewModel.deactivate()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel:  MapViewModel(model: LocationDataSource()))
+        ContentView(viewModel:  MapViewModel())
     }
 }

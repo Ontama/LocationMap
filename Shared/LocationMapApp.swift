@@ -10,7 +10,7 @@ import CoreLocation
 
 @main
 struct LocationMapApp: App {
-    @StateObject var viewModel = MapViewModel(model: LocationDataSource())
+    @StateObject var viewModel = MapViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView(viewModel: viewModel)

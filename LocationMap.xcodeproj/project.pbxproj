@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA41954C27FEAAB800907F54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41954B27FEAAB800907F54 /* LocationManager.swift */; };
+		EA41954D27FEAAB800907F54 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41954B27FEAAB800907F54 /* LocationManager.swift */; };
+		EA41955127FEAB4500907F54 /* CurrentLocationCenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41955027FEAB4500907F54 /* CurrentLocationCenterButton.swift */; };
+		EA41955227FEAB4500907F54 /* CurrentLocationCenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41955027FEAB4500907F54 /* CurrentLocationCenterButton.swift */; };
+		EA41955427FEAC6B00907F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41955327FEAC6B00907F54 /* SceneDelegate.swift */; };
+		EA41955527FEAC6B00907F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41955327FEAC6B00907F54 /* SceneDelegate.swift */; };
 		EACC3C9027E98FDB00988939 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C8F27E98FDB00988939 /* Tests_iOS.swift */; };
 		EACC3C9227E98FDB00988939 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C9127E98FDB00988939 /* Tests_iOSLaunchTests.swift */; };
 		EACC3C9F27E98FDB00988939 /* LocationMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3C7727E98FDA00988939 /* LocationMapApp.swift */; };
@@ -19,8 +25,6 @@
 		EACC3CB527E9900400988939 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB327E9900400988939 /* MapView.swift */; };
 		EACC3CB727E9902100988939 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB627E9902100988939 /* MapViewModel.swift */; };
 		EACC3CB827E9902100988939 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB627E9902100988939 /* MapViewModel.swift */; };
-		EACC3CBA27E9903B00988939 /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB927E9903B00988939 /* LocationDataSource.swift */; };
-		EACC3CBB27E9903B00988939 /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CB927E9903B00988939 /* LocationDataSource.swift */; };
 		EACC3CBD27E9905000988939 /* PinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBC27E9905000988939 /* PinItem.swift */; };
 		EACC3CBE27E9905000988939 /* PinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBC27E9905000988939 /* PinItem.swift */; };
 		EACC3CC027E9906600988939 /* CLAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */; };
@@ -46,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA41954B27FEAAB800907F54 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EA41955027FEAB4500907F54 /* CurrentLocationCenterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationCenterButton.swift; sourceTree = "<group>"; };
+		EA41955327FEAC6B00907F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EACC3C7727E98FDA00988939 /* LocationMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapApp.swift; sourceTree = "<group>"; };
 		EACC3C7827E98FDA00988939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EACC3C7927E98FDB00988939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +64,6 @@
 		EACC3C9727E98FDB00988939 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACC3CB327E9900400988939 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EACC3CB627E9902100988939 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		EACC3CB927E9903B00988939 /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
 		EACC3CBC27E9905000988939 /* PinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItem.swift; sourceTree = "<group>"; };
 		EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatus.swift; sourceTree = "<group>"; };
 		EACC3CC627E9929500988939 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -96,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA41954F27FEAAD900907F54 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EA41954B27FEAAB800907F54 /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		EACC3C7127E98FDA00988939 = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				EACC3C7727E98FDA00988939 /* LocationMapApp.swift */,
+				EA41955327FEAC6B00907F54 /* SceneDelegate.swift */,
 				EACC3CC327E9907F00988939 /* View */,
 				EACC3CC427E9909800988939 /* Model */,
 				EACC3CC227E9907700988939 /* ViewModel */,
+				EA41954F27FEAAD900907F54 /* Manager */,
 				EACC3C7927E98FDB00988939 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -151,6 +167,7 @@
 			children = (
 				EACC3C7827E98FDA00988939 /* ContentView.swift */,
 				EACC3CB327E9900400988939 /* MapView.swift */,
+				EA41955027FEAB4500907F54 /* CurrentLocationCenterButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				EACC3CBF27E9906600988939 /* CLAuthorizationStatus.swift */,
-				EACC3CB927E9903B00988939 /* LocationDataSource.swift */,
 				EACC3CBC27E9905000988939 /* PinItem.swift */,
 			);
 			path = Model;
@@ -333,11 +349,13 @@
 			files = (
 				EACC3CBD27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA127E98FDB00988939 /* ContentView.swift in Sources */,
-				EACC3CBA27E9903B00988939 /* LocationDataSource.swift in Sources */,
+				EA41955427FEAC6B00907F54 /* SceneDelegate.swift in Sources */,
 				EACC3CB427E9900400988939 /* MapView.swift in Sources */,
+				EA41954C27FEAAB800907F54 /* LocationManager.swift in Sources */,
 				EACC3C9F27E98FDB00988939 /* LocationMapApp.swift in Sources */,
 				EACC3CB727E9902100988939 /* MapViewModel.swift in Sources */,
 				EACC3CC027E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
+				EA41955127FEAB4500907F54 /* CurrentLocationCenterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +365,13 @@
 			files = (
 				EACC3CBE27E9905000988939 /* PinItem.swift in Sources */,
 				EACC3CA227E98FDB00988939 /* ContentView.swift in Sources */,
-				EACC3CBB27E9903B00988939 /* LocationDataSource.swift in Sources */,
+				EA41955527FEAC6B00907F54 /* SceneDelegate.swift in Sources */,
 				EACC3CB527E9900400988939 /* MapView.swift in Sources */,
+				EA41954D27FEAAB800907F54 /* LocationManager.swift in Sources */,
 				EACC3CA027E98FDB00988939 /* LocationMapApp.swift in Sources */,
 				EACC3CB827E9902100988939 /* MapViewModel.swift in Sources */,
 				EACC3CC127E9906600988939 /* CLAuthorizationStatus.swift in Sources */,
+				EA41955227FEAB4500907F54 /* CurrentLocationCenterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
